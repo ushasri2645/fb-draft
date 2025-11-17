@@ -1,0 +1,19 @@
+:global(.theme) {
+  background-color: transparent !important;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; cannot do this or it will break */ 
+}
+
+@media (max-width: 600px) {
+  .container {
+    transform: scale(0.3);
+  }
+}

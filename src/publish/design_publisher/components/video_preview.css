@@ -1,0 +1,80 @@
+.wrapper {
+  overflow: hidden;
+  background-color: rgb(0, 0, 0) !important;
+  position: relative;
+  width: 300px;
+}
+
+.aspectRatio {
+  position: relative;
+  /* force aspect ratio */
+  width: 100%;
+  padding-top: calc(100% * 1920 / 1080) !important;
+}
+
+.playbar {
+  background-color: white;
+  height: 2px;
+  width: 100%;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar {
+  transform: scale(0.6);
+  width: 24px;
+  height: 24px;
+  transform-origin: top left;
+}
+
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textPlaceholder {
+  min-width: calc(8px * 20);
+}
+
+.imageContainer {
+  position: absolute;
+  /* overflow: hidden; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: fill;
+}
+
+.imagePlaceholder,
+.image,
+.video {
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  color: white !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(0deg, #262626cc, #26262600);
+}
+
+.footer * {
+  color: white !important;
+}
+
+.iconPlaceholder {
+  width: 24px;
+  height: 24px;
+}

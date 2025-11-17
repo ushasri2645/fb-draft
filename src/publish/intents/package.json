@@ -1,0 +1,47 @@
+{
+  "name": "@canva/intents",
+  "version": "2.0.0",
+  "description": "The Canva Apps SDK Intents library",
+  "author": "Canva Pty Ltd.",
+  "license": "SEE LICENSE IN LICENSE.md FILE",
+  "peerDependencies": {
+    "@canva/error": "^2.0.0"
+  },
+  "main": "./lib/cjs/sdk/intents/alpha.js",
+  "module": "./lib/esm/sdk/intents/alpha.js",
+  "exports": {
+    ".": {
+      "types": "./alpha.d.ts",
+      "require": "./lib/cjs/sdk/intents/alpha.js",
+      "import": "./lib/esm/sdk/intents/alpha.js"
+    },
+    "./test": {
+      "types": "./test/alpha.d.ts",
+      "require": "./lib/cjs/sdk/intents/test/alpha.js",
+      "import": "./lib/esm/sdk/intents/test/alpha.js"
+    },
+    "./data": {
+      "types": "./data/alpha.d.ts",
+      "require": "./lib/cjs/sdk/intents/data/alpha.js",
+      "import": "./lib/esm/sdk/intents/data/alpha.js"
+    },
+    "./design": {
+      "types": "./design/alpha.d.ts",
+      "require": "./lib/cjs/sdk/intents/design/alpha.js",
+      "import": "./lib/esm/sdk/intents/design/alpha.js"
+    },
+    "./asset": {
+      "types": "./asset/alpha.d.ts",
+      "require": "./lib/cjs/sdk/intents/asset/alpha.js",
+      "import": "./lib/esm/sdk/intents/asset/alpha.js"
+    }
+  },
+  "typings": "./alpha.d.ts",
+  "typesVersions": {
+  "*": {
+    "design": ["./design/alpha.d.ts"],
+    "data": ["./data/alpha.d.ts"],
+    "asset": ["./asset/alpha.d.ts"]
+  }
+}
+}
